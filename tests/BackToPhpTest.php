@@ -13,8 +13,7 @@ class BackToPhpTest extends PHPUnit_Framework_TestCase
 	{
 		$b2p = new BackToPhp();
 		$b2p->setTemplateEngine('Smarty', '../../Smarty-2.6.27/libs/Smarty.class.php');
-		$class = get_class($b2p->templateEngine);
-		$this->assertTrue($class == 'Smarty', "Smarty Templating Engine Set");
+		$this->assertTrue($b2p->templateEngine instanceof Smarty, "Smarty Templating Engine Set");
 	}
 
 }
