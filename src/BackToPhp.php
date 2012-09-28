@@ -8,11 +8,23 @@ class BackToPhp
 	protected $templateEngineClassFile;
 	protected $templateEngineClass;
 
+	/**
+	 * Just a wrapper function since we can't test it well
+	 * @param $templateEngineClass string the class name
+	 * @param $templateEngineClassFile string the class path to require
+	 */
 	public function __construct($templateEngineClass, $templateEngineClassFile)
 	{
 		$this->setTemplateEngine($templateEngineClass, $templateEngineClassFile);
 	}
 
+	/**
+	 * Loads a templating engine. Currently only supports Smarty, so no params for the constructor
+	 *
+	 * @param $templateEngineClass string the class name
+	 * @param $templateEngineClassFile string the class path to require
+	 * @return BackToPhp
+	 */
 	public function setTemplateEngine($templateEngineClass, $templateEngineClassFile)
 	{
 		require_once "$templateEngineClassFile";
@@ -23,6 +35,3 @@ class BackToPhp
 	}
 
 }
-
-$b2p = new BackToPhp("Smarty", '../../Smarty-2.6.27/libs/Smarty.class.php');
-var_dump($b2p->templateEngine);
