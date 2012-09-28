@@ -5,6 +5,10 @@ require_once "../src/BackToPhp.php";
 class BackToPhpTest extends PHPUnit_Framework_TestCase
 {
 
+	protected function setUp() {}
+
+	protected function tearDown() {}
+
 	public function testSetSmartyAsEngine()
 	{
 		$b2p = new BackToPhp();
