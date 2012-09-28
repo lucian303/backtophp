@@ -13,9 +13,11 @@ class BackToPhp
 	 * @param $templateEngineClass string the class name
 	 * @param $templateEngineClassFile string the class path to require
 	 */
-	public function __construct($templateEngineClass, $templateEngineClassFile)
+	public function __construct($templateEngineClass = null, $templateEngineClassFile = null)
 	{
-		$this->setTemplateEngine($templateEngineClass, $templateEngineClassFile);
+		if ($templateEngineClass && $templateEngineClassFile) {
+			$this->setTemplateEngine($templateEngineClass, $templateEngineClassFile);
+		}
 	}
 
 	/**
