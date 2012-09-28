@@ -28,4 +28,10 @@ class BackToPhpTest extends PHPUnit_Framework_TestCase
 		$this->assertTrue($this->b2p->templateEngine instanceof TemplateEngine, "TemplateEngine Abstraction used");
 	}
 
+	public function testRun()
+	{
+		$result = $this->b2p->run();
+		$this->assertTrue($result == true);
+	}
+
 }

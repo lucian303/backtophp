@@ -36,4 +36,9 @@ class BackToPhp
 		return $this;
 	}
 
+	public function run()
+	{
+		return true;
+	}
+
 }
