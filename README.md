@@ -5,3 +5,5 @@ There are numerous reasons for the necessity of this tool. Using templating lang
 Thus the time has come for change. Feel free to join me on this journey and let's try to improve development practices and systems while teaching people about the importance of simplicity in design.
 
 --lucian303
+
+p.s. I intend to use TDD to develop this application so all code submitted must have unit tests covering it (if it makes sense), preferably created in a test driven environment, although if you want to write the tests later and they're good tests, I'll probably make an exception. :)
