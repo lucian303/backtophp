@@ -10,6 +10,7 @@ class BackToPhp
 
 	/**
 	 * Just a wrapper function since we can't test it well
+	 *
 	 * @param $templateEngineClass string the class name
 	 * @param $templateEngineClassFile string the class path to require
 	 */
