@@ -36,11 +36,21 @@ class BackToPhp
 		return $this;
 	}
 
+	/**
+	 * Run the application on the current input and produce output (stdin/out and/or files)
+	 *
+	 * @return bool success or not
+	 */
 	public function run()
 	{
 		return true;
 	}
 
+	/**
+	 * Bootstrap and initialize the application, reading cli switches and/or option file for params
+	 *
+	 * @return bool success or not
+	 */
 	public function bootstrap()
 	{
 		return true;
