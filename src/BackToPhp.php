@@ -41,4 +41,9 @@ class BackToPhp
 		return true;
 	}
 
+	public function bootstrap()
+	{
+		return true;
+	}
+
 }
