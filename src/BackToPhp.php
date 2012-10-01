@@ -80,7 +80,7 @@ class BackToPhp
 	}
 
 	/**
-	 * Initializes log to file and sets the instance in the registry
+	 * Initializes log to file
 	 *
 	 * @return BackToPhp
 	 */
