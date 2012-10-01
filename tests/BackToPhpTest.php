@@ -39,23 +39,10 @@ class BackToPhpTest extends PHPUnit_Framework_TestCase
 	{
 		$result = $this->b2p->bootstrap();
 		$this->assertTrue($result instanceof BackToPhp);
-	}
 
-	public function testInitAutoLoader()
-	{
-		require_once '../lib/Zend/Loader/StandardAutoloader.php';
-
-		$this->b2p->bootstrap();
 		$autoLoader = $this->b2p->autoLoader;
 		$this->assertTrue($autoLoader instanceof Zend\Loader\SplAutoloader);
-	}
 
-	/**
-	 * @depends testInitAutoLoader
-	 */
-	public function testInitLog()
-	{
-		$this->b2p->bootstrap();
 		$log = $this->b2p->log;
 		$this->assertTrue($log instanceof Zend\Log\Logger);
 	}
