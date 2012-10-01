@@ -5,6 +5,7 @@ class BackToPhp
 
 	public $templateEngine;
 	public $autoLoader;
+	public $log;
 
 	protected $templateEngineClassFile;
 	protected $templateEngineClass;
@@ -57,23 +58,24 @@ class BackToPhp
 	public function bootstrap()
 	{
 		$this->initAutoLoader();
+		$this->initLog();
 
 		return $this;
 	}
 
-	public function initAutoLoader()
+	protected function initAutoLoader()
 	{
 		require_once '../lib/Zend/Loader/StandardAutoloader.php';
 
 		$this->autoLoader = new Zend\Loader\StandardAutoloader(array('autoregister_zf' => true));
 		$this->autoLoader->register();
-
 		return $this;
 	}
 
-	public function initLog()
+	protected function initLog()
 	{
-
+		$this->log = new Zend\Log\Logger();
+		return $this;
 	}
 
 }
