@@ -32,13 +32,13 @@ class BackToPhpTest extends PHPUnit_Framework_TestCase
 	public function testRun()
 	{
 		$result = $this->b2p->run();
-		$this->assertTrue($result == true);
+		$this->assertTrue($result instanceof BackToPhp);
 	}
 
 	public function testBootstrap()
 	{
 		$result = $this->b2p->bootstrap();
-		$this->assertTrue($result == true);
+		$this->assertTrue($result instanceof BackToPhp);
 	}
 
 }

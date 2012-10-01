@@ -34,27 +34,28 @@ class BackToPhp
 
 		$this->templateEngineClass = $templateEngineClass;
 		$this->templateEngine = new $templateEngineClass;
+
 		return $this;
 	}
 
 	/**
 	 * Run the application on the current input and produce output (stdin/out and/or files)
 	 *
-	 * @return bool success or not
+	 * @return BackToPhp (fluid interface)
 	 */
 	public function run()
 	{
-		return true;
+		return $this;
 	}
 
 	/**
 	 * Bootstrap and initialize the application, reading cli switches and/or option file for params
 	 *
-	 * @return bool success or not
+	 * @return BackToPhp (fluid interface)
 	 */
 	public function bootstrap()
 	{
-		return true;
+		return $this;
 	}
 
 }
