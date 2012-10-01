@@ -1,3 +1,10 @@
+This license (GPLv3) applies to all code except
+Zend Framework 2, Smarty 2 and 3, and Twig all of which have
+their own Licenses and are included only to remove dependency issues
+during development.
+
+---
+
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
