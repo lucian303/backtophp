@@ -63,6 +63,13 @@ class BackToPhp
 		return $this;
 	}
 
+	/**
+	 * Sets up the standard ZF2 Autoloader. It's not the most efficient
+	 * but requires the least setup. Since we'll only be using a couple of
+	 * Zend modules it should be no problem
+	 *
+	 * @return BackToPhp
+	 */
 	protected function initAutoLoader()
 	{
 		require_once '../lib/Zend/Loader/StandardAutoloader.php';
@@ -72,6 +79,11 @@ class BackToPhp
 		return $this;
 	}
 
+	/**
+	 * Initializes log to file and sets the instance in the registry
+	 *
+	 * @return BackToPhp
+	 */
 	protected function initLog()
 	{
 		$this->log = new Zend\Log\Logger();
