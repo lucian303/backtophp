@@ -7,3 +7,7 @@ Thus the time has come for change. Feel free to join me on this journey and let'
 --lucian303
 
 p.s. I intend to use TDD to develop this application so all code submitted must have unit tests covering it (if it makes sense), preferably created in a test driven environment, although if you want to write the tests later and they're good tests, I'll probably make an exception. :)
+
+===
+
+Currently, investigating whether to use Smarty2 or 3 since 3 supports most of 2's features, it seems. Will do a Smarty 3 code analysis.
