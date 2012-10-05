@@ -11,3 +11,6 @@ p.s. I intend to use TDD to develop this application so all code submitted must 
 ===
 
 Currently, investigating whether to use Smarty2 or 3 since 3 supports most of 2's features, it seems. Will do a Smarty 3 code analysis.
+
+--
+backtophp is &copy; Copyright 2012 Lucian Hontau

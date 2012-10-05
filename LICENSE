@@ -1,7 +1,7 @@
 This license (GPLv3) applies to all code except
-Zend Framework 2, Smarty 2 and 3, and Twig all of which have
-their own Licenses and are included only to remove dependency issues
-during development.
+Zend Framework 2, Smarty 2 and 3,  Twig, and all other external libraries,
+all of which have their own Copyrights and Licenses and are included only 
+to remove dependency issues and ease development.
 
 ---
 
