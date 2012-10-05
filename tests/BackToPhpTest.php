@@ -21,12 +21,12 @@ class BackToPhpTest extends PHPUnit_Framework_TestCase
 
 	public function testSetSmartyAsEngine()
 	{
-		$this->assertTrue($this->b2p->templateEngine instanceof Smarty, "Smarty Templating Engine Set");
+		$this->assertTrue($this->b2p->getTemplateEngine() instanceof Smarty, "Smarty Templating Engine Set");
 	}
 
 	public function testSetSmartyAsTemplateEgine()
 	{
-		$this->assertTrue($this->b2p->templateEngine instanceof TemplateEngine, "TemplateEngine Abstraction used");
+		$this->assertTrue($this->b2p->getTemplateEngine() instanceof TemplateEngine, "TemplateEngine Abstraction used");
 	}
 
 	public function testRun()

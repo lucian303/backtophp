@@ -3,10 +3,10 @@
 class BackToPhp
 {
 
-	public $templateEngine;
 	public $autoLoader;
 	public $log;
 
+	protected $templateEngine;
 	protected $templateEngineClassFile;
 	protected $templateEngineClass;
 
@@ -38,6 +38,11 @@ class BackToPhp
 		$this->templateEngine = new $templateEngineClass;
 
 		return $this;
+	}
+
+	public function getTemplateEngine()
+	{
+		return $this->templateEngine;
 	}
 
 	/**
