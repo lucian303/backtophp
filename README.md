@@ -10,7 +10,7 @@ p.s. I intend to use TDD to develop this application so all code submitted must 
 
 ===
 
-Currently, investigating whether to use Smarty2 or 3 since 3 supports most of 2's features, it seems. Will do a Smarty 3 code analysis.
+I've decided to start with Smarty 3 as Smarty is the most widely used engine and its code is not as bad as Smarty 2. :)
 
 --
 backtophp is &copy; Copyright 2012 Lucian Hontau
