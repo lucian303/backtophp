@@ -30,6 +30,11 @@ class Decompiler
 		} catch (Exception $e) {}
 
 
+		return $this;
+	}
+
+	public function getTemplateEngine()
+	{
 		return $this->templateEngine;
 	}
 
