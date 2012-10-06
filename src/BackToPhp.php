@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . '/../vendor/autoload.php';
+
 class BackToPhp
 {
 
@@ -77,7 +79,7 @@ class BackToPhp
 	 */
 	protected function initAutoLoader()
 	{
-		require_once '../lib/Zend/Loader/StandardAutoloader.php';
+		require_once __DIR__ . '/../lib/Zend/Loader/StandardAutoloader.php';
 
 		$this->autoLoader = new Zend\Loader\StandardAutoloader(array('autoregister_zf' => true));
 		$this->autoLoader->register();
