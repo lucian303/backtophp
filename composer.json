@@ -1,0 +1,16 @@
+{
+    "require": {
+    	"twig/twig": "1.10.x-dev",
+        "symfony/console": "2.2.x-dev",
+        "symfony/class-loader": "2.2.x-dev",
+        "symfony/browser-kit": "2.1.x-dev",
+        "symfony/css-selector": "2.2.x-dev",        
+        "symfony/dom-crawler": "2.1.x-dev",        
+        "symfony/templating": "2.2.x-dev",   
+        "symfony/validator": "2.2.x-dev",        
+        "symfony/security": "2.1.x-dev",        
+        "symfony/dependency-injection": "2.2.x-dev",
+        "symfony/config": "2.2.x-dev",
+        "symfony/yaml": "2.2.x-dev"
+    }
+}
