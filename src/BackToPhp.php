@@ -79,9 +79,7 @@ class BackToPhp
 	 */
 	protected function initAutoLoader()
 	{
-		require_once __DIR__ . '/../lib/Zend/Loader/StandardAutoloader.php';
-
-		$this->autoLoader = new Zend\Loader\StandardAutoloader(array('autoregister_zf' => true));
+		$this->autoLoader = new \Zend\Loader\StandardAutoloader(array('autoregister_zf' => true));
 		$this->autoLoader->register();
 		return $this;
 	}
@@ -93,7 +91,7 @@ class BackToPhp
 	 */
 	protected function initLog()
 	{
-		$this->log = new Zend\Log\Logger();
+		$this->log = new \Zend\Log\Logger();
 		return $this;
 	}
 
