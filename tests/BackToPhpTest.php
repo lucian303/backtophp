@@ -1,7 +1,8 @@
 <?php
 
-require_once "../src/BackToPhp.php";
-require_once "../src/TemplateEngine.php";
+require_once 'bootstrap.php';
+require_once BASE_DIR . "/src/BackToPhp.php";
+require_once BASE_DIR . "/src/TemplateEngine.php";
 
 class BackToPhpTest extends PHPUnit_Framework_TestCase
 {
@@ -12,7 +13,7 @@ class BackToPhpTest extends PHPUnit_Framework_TestCase
 	protected function setUp()
 	{
 		$this->b2p = new BackToPhp();
-		$this->b2p->setTemplateEngine('TemplateEngine', __DIR__ . '/../lib/Smarty-3.1.12/libs/Smarty.class.php');
+		$this->b2p->setTemplateEngine('TemplateEngine', BASE_DIR . '/lib/Smarty-3.1.12/libs/Smarty.class.php');
 	}
 
 	protected function tearDown()

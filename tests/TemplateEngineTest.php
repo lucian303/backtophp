@@ -1,5 +1,6 @@
 <?php
-require_once "../src/TemplateEngine.php";
+require_once 'bootstrap.php';
+require_once BASE_DIR . "/src/TemplateEngine.php";
 
 class TemplateEngineTest extends PHPUnit_Framework_TestCase
 {

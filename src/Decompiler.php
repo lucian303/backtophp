@@ -10,9 +10,15 @@ class Decompiler
 	protected $templateEngine;
 	protected $engineType;
 
-	public function compile()
+	public function decompile()
 	{
+        $result = '';
+        $result .= "<!--View Start-->";
 
+        // TODO: call compile and get output then run through tidy
+
+        $result .= "<!--View End-->";
+        return $result;
 	}
 
 	public function setSmartyTemplateEngine(Smarty $templateEngine)
