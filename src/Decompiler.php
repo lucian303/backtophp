@@ -12,13 +12,13 @@ class Decompiler
 
 	public function decompile()
 	{
-        $result = '';
-        $result .= "<!--View Start-->";
+		$result = '';
+		$result .= "<!--View Start-->";
 
-        // TODO: call compile and get output then run through tidy
+		// TODO: call compile and get output then run through tidy
 
-        $result .= "<!--View End-->";
-        return $result;
+		$result .= "<!--View End-->";
+		return $result;
 	}
 
 	public function setSmartyTemplateEngine(Smarty $templateEngine)
