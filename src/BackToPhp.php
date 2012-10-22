@@ -93,10 +93,10 @@ class BackToPhp
 	protected function initLog()
 	{
 		$this->log = new \Zend\Log\Logger();
-        $writer = new \Zend\Log\Writer\Stream(BASE_DIR . '/backtophp.log');
-        $this->log->addWriter($writer);
+		$writer = new \Zend\Log\Writer\Stream(BASE_DIR . '/backtophp.log');
+		$this->log->addWriter($writer);
 
-        $this->log->info('File log writer intialized.');
+		$this->log->info('File log writer intialized.');
 		return $this;
 	}
 

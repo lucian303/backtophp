@@ -16,15 +16,15 @@ class DecompilerTest extends PHPUnit_Framework_TestCase
 		$this->assertTrue($decompiler->getEngineType() == Decompiler::TEMPLATE_ENGINE_SMARTY3, 'Template Engine is Smarty 3++');
 	}
 
-    public function testDecompile()
-    {
-        $decompiler = new Decompiler();
-        $smarty = new Smarty();
-        $decompiler->setSmartyTemplateEngine($smarty);
+	public function testDecompile()
+	{
+		$decompiler = new Decompiler();
+		$smarty = new Smarty();
+		$decompiler->setSmartyTemplateEngine($smarty);
 
-        $result = $decompiler->decompile();
-        $this->assertNotEmpty($result);
-    }
+		$result = $decompiler->decompile();
+		$this->assertNotEmpty($result);
+	}
 
 }
 

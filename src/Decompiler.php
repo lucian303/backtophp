@@ -33,7 +33,8 @@ class Decompiler
 			if (version_compare($smarty3Version, '3.0.0.0', '>=')) {
 				$this->engineType = self::TEMPLATE_ENGINE_SMARTY3;
 			}
-		} catch (Exception $e) {}
+		} catch (Exception $e) {
+		}
 
 
 		return $this;
