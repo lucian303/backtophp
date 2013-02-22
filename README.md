@@ -13,4 +13,4 @@ p.s. I intend to use TDD to develop this application so all code submitted must 
 I've decided to start with Smarty 3 as Smarty is the most widely used engine and its code is not as bad as Smarty 2. :)
 
 --
-backtophp is &copy; Copyright 2012 Lucian Hontau
+backtophp is &copy; Copyright 2012-2013 Lucian Hontau
