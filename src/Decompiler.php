@@ -3,9 +3,9 @@
 class Decompiler
 {
 
-	const TEMPLATE_ENGINE_SMARTY2 = 1;
-	const TEMPLATE_ENGINE_SMARTY3 = 2;
-	const TEMPLATE_ENGINE_TWIG = 3;
+	const TEMPLATE_ENGINE_TWIG = 1;
+	const TEMPLATE_ENGINE_SMARTY2 = 2;
+	const TEMPLATE_ENGINE_SMARTY3 = 3;
 
 	protected $templateEngine;
 	protected $engineType;
